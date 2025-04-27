@@ -1,0 +1,24 @@
+Privacy Policy
+Last Updated: [April 27, 2025]
+
+This Chrome/Edge extension respects your privacy. Here's how your data is handled:
+
+What We Collect
+- When you click the extension button, it captures a screenshot of the current webpage you are viewing.
+- The screenshot is then sent to a CompreFace instance that you have selected and configured.
+
+What We Don't Collect
+- We do not collect, store, or share any personal information.
+- We do not track your browsing activity or usage habits.
+- We do not transmit any data to external servers other than the CompreFace instance you specify.
+
+Storage
+- The extension stores the CompreFace instance URL and API key **locally** in your Edge browser's extension storage.
+- This information is not shared or accessible by anyone but you.
+
+Your Control
+- You are in full control of which CompreFace server is used.
+- You can clear or update your settings at any time via the extension's settings page.
+- You can stop using the extension at any time, and uninstall it from your browser.
+
+If you have any questions or concerns, feel free to reach out.
