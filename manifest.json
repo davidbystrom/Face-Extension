@@ -1,0 +1,15 @@
+{
+    "manifest_version": 3,
+    "name": "Face Detection",
+    "version": "1.0",
+    "description": "An extension that connects faces with their names, using a local CompreFace API.",
+    "permissions": ["activeTab", "tabs", "scripting", "notifications", "storage"],
+    "host_permissions": ["<all_urls>"],
+    "action": {
+      "default_popup": "popup.html",
+      "default_icon": "icon.png"
+    },
+    "options_page": "settings.html",
+    "author": "David Byström",
+    "license": "MIT"
+}

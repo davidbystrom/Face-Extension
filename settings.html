@@ -1,0 +1,122 @@
+<!--
+Author: @davidbystrom
+Date: April 27, 2025
+Description: Settings page for the Face Detection extension.
+-->
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Settings</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <style>
+      body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f0f2f5;
+        color: #333;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+
+      .container {
+        width: 90%;
+        max-width: 400px;
+        background-color: #fff;
+        border-radius: 12px;
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+        padding: 25px;
+        text-align: center;
+      }
+
+      .icon {
+        width: 80px;
+        height: 80px;
+        margin: 0 auto 20px;
+        background-color: #4caf50;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      }
+
+      .icon svg {
+        width: 50px;
+        height: 50px;
+        fill: #fff;
+      }
+
+      h1 {
+        font-size: 22px;
+        margin-bottom: 20px;
+        color: #444;
+        font-weight: bold;
+      }
+
+      label {
+        display: block;
+        margin-bottom: 8px;
+        font-weight: bold;
+        text-align: left;
+      }
+
+      input[type="text"] {
+        width: 100%;
+        padding: 12px;
+        margin-bottom: 20px;
+        border: 1px solid #ddd;
+        border-radius: 6px;
+        box-sizing: border-box;
+        font-size: 14px;
+      }
+
+      button {
+        width: 100%;
+        padding: 12px;
+        background-color: #4caf50;
+        color: #fff;
+        border: none;
+        border-radius: 6px;
+        font-size: 16px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+      }
+
+      button:hover {
+        background-color: #45a049;
+      }
+
+      .message {
+        margin-top: 15px;
+        font-size: 14px;
+        text-align: center;
+        color: #555;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="icon">
+        <!-- Drawn face icon -->
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+          <circle cx="12" cy="12" r="10" />
+          <circle cx="9" cy="10" r="1.5" />
+          <circle cx="15" cy="10" r="1.5" />
+          <path d="M8 15c1.5 2 4.5 2 6 0" />
+        </svg>
+      </div>
+      <h1>Face Detection Settings</h1>
+      <label for="apiKey">API Key</label>
+      <input type="text" id="apiKey" placeholder="Enter your API key" />
+      <label for="apiEndpoint">API Endpoint</label>
+      <input type="text" id="apiEndpoint" placeholder="Enter your API endpoint" />
+      <button id="saveButton">Save</button>
+      <p class="message" id="message"></p>
+    </div>
+    <script src="settings.js"></script>
+  </body>
+</html>
